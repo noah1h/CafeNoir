@@ -20,3 +20,27 @@ $(document).ready(function () {
     }
   });
 });
+
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 30, // spacing between cards
+  slidesPerView: 1, // default for mobile
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2, // tablets
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4, // desktop
+      spaceBetween: 30,
+    }
+  }
+});

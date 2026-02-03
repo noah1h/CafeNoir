@@ -21,7 +21,6 @@
 }
 body {
   background-color: var(--dark-color);
-  height: 300vh;
 }
 * {
   padding: 0;
@@ -328,7 +327,7 @@ body.light-mode .sidebar {
 @media(max-width:800px) {
   #header {
     padding-top: 100px;
-    min-height: 50%;
+    min-height: 150vh;
   }
   .coffee-container {
     display: none;
@@ -497,4 +496,171 @@ body.light-mode .sidebar {
 #best-sellers {
   background-color: var(--dark-color);
   padding-top: 30px;
+}
+.split-line {
+  background-color: var(--primary-color);
+  height: 4px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  margin-top: 8px;
+}
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-color: var(--secondary-color);
+  height: 400px;
+  color: var(--text-color);
+  border-radius: 20px;
+  position: relative;
+  padding-top: 10px;
+  width: 90%;
+}
+.card-title {
+  font-size: 25px;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+}
+.card-text {
+  font-weight: 400;
+  padding-top: 20px;
+  color: var(--desc-color);
+}
+.card-image-wrapper {
+  width: 90%;        /* desired width */
+  height: 200px;     /* desired height */
+  overflow: hidden;
+  margin: 0 auto;    /* center horizontally in card */
+  border-radius: 14px;
+}
+
+.card-image-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* fills container while keeping aspect ratio */
+  object-position: center;  /* center of the image will appear */
+}
+.view-all-btn {
+  position: relative;
+  color: var(--text-color);
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-size: 22px;
+  transition: all 0.15s ease;
+}
+.best-sellers-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.view-all-btn:hover .coffee-cta-bean {
+  transform: rotate(45deg) translateY(-3px) scale(1.1);
+}
+.view-all-btn:hover {
+  color: var(--text-color);
+  background-color: var(--hover-color);
+}
+
+#about {
+  background-color: var(--dark-color);
+  height: 100vh;
+  width: 100%;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+.about-title {
+  font-size: 100px;
+  color: var(--text-color);
+  font-weight: 900;
+  font-family: "EB Garamond", serif;
+  line-height: 100px;
+  letter-spacing: 20px;
+}
+.about-title-md {
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: 900;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 20px;
+}
+@media(max-width:1000px) {
+  .about-title {
+    font-size: 60px;
+  }
+}
+@media(max-width:800px) {
+  #about {
+    height: auto;
+    min-height: unset;
+    padding-bottom: 40px;
+    overflow: visible;
+  }
+  .about-title {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .about-img {
+    margin-top: 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .about-img-2 {
+    margin-top: 10px;
+  }
+  .about-subtitle-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .col-md-3 {
+    text-align: center;
+  }
+  .about-subtitle {
+    padding-top: 20px;
+  }
+  .about-subtitle-desc {
+    padding-bottom: 10px;
+  }
+}
+.about-img {
+  max-width: 90%;
+  border-radius: 20px;
+}
+.about-subtitle {
+  color: var(--primary-color);
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 22px;
+  font-weight: 900;
+  padding-top: 50px;
+}
+.about-subtitle-2 {
+  color: var(--primary-color);
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 3px;
+  padding-top: 50px;
+}
+.about-subtitle-container {
+  width: 90%;
+}
+.about-subtitle-desc {
+  color: var(--desc-color);
+  padding-top: 10px;
+  max-width: 100%;
+  text-align: center;
 }
