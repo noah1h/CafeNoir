@@ -51,10 +51,10 @@
     <div class="sidebar d-lg-none">
       <div class="sidebar-links">
         <a class="sidebar-link" href="index.html">Home</a>
-        <a class="sidebar-link" href="about.html">About us</a>
+        <a class="sidebar-link" href="index.html#about">About us</a>
         <a class="sidebar-link" href="inventory.html">Our menu</a>
         <a class="sidebar-link" href="index.html#contacts">Contact Us</a>
-        <a class="sidebar-button" href="index.html#contacts">Visit us</a>
+        <a class="sidebar-button" href="index.html#map">Visit us</a>
         
         
       </div>
@@ -65,10 +65,10 @@
 
         <div class="nav-links-container d-none d-lg-flex">
           <a class="active" data-text="Home" href="index.html">Home</a>
-          <a class="nav-links" data-text="About us" href="about.html">About us</a>
+          <a class="nav-links" data-text="About us" href="index.html#about">About us</a>
           <a class="nav-links" data-text="Inventory" href="inventory.html">Our menu</a>
           <a class="nav-links" data-text="Contact Us" href="index.html#contacts">Contact Us</a>
-          <a class="glitch-button" href="#">
+          <a class="glitch-button" href="index.html#map">
             <span>Visit us</span></a>
         </div>
         
@@ -135,6 +135,7 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
       <!-- Espresso -->
+      
       <div class="swiper-slide" data-aos="fade-up">
         <div class="h-100 text-center">
           <div class="card-image-wrapper">
@@ -335,6 +336,54 @@
         </div>
       </div>
     </section>
+
+    <section id="map">
+      <div class="map-container">
+      <div class="section-title map-title text-center">
+        <div class="split-line-map" data-aos="fade-left"></div>
+        <span data-aos="fade-right">Visit us</span></div>
+        <div class="container-fluid px-0">
+          <div class="row">
+            <div class="col-12 col-md-6">
+                <iframe
+                class="map-iframe"
+                  loading="lazy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1278%2C51.5074%2C-0.1215%2C51.5104&layer=mapnik&marker=51.509,-0.128"
+                  title="Café Location"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                  data-aos="fade-right"
+                >
+                </iframe>
+            </div>
+            <div class="col-12 col-md-6 ps-4">
+              <div class="visit-guide">
+                <h2 class="tips-title" data-aos="fade-down">Plan Your Visit</h2>
+                
+                <div class="visit-option" data-aos="fade-left" data-location="downtown">
+                  <h3 class="tip-title">🚶 Quick Stop</h3>
+                  <p>Grab & go • 15 min visit • Morning rush</p>
+                  <small class="tips-desc">Perfect for: Commuters, quick meetings</small>
+                </div>
+                
+                <div class="visit-option pt-5" data-aos="fade-left" data-aos-delay="100" data-location="arts">
+                  <h3 class="tip-title">📚 Stay Awhile</h3>
+                  <p>Cozy corners • Free WiFi • 1-2 hours</p>
+                  <small class="tips-desc">Perfect for: Remote work, reading dates</small>
+                </div>
+                
+                <div class="visit-option pt-5" data-aos="fade-left" data-aos-delay="200" data-location="roastery">
+                  <h3 class="tip-title">🎉 Experience</h3>
+                  <p>Tastings • Tours • 2+ hours</p>
+                  <small class="tips-desc">Perfect for: Coffee lovers, groups</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
    <!-- jQuery (single import) -->
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
  
@@ -342,6 +391,7 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
      AOS.init();
+     
    </script>
  
    <!-- Custom JS -->

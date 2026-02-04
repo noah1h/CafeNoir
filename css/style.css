@@ -104,6 +104,7 @@ body.light-mode #nav {
   font-weight: 900;
   color: var(--primary-color);
   transition: color 0.3s ease;
+  
 }
 @media(max-width:1025px) {
   .logo {
@@ -334,7 +335,7 @@ body.light-mode .sidebar {
   .coffee-container {
     display: none;
   }
-  .
+  
 }
 .banner-logo {
   color: var(--primary-color);
@@ -520,6 +521,7 @@ body.light-mode .sidebar {
 }
 .swiper-slide {
   background-color: var(--secondary-color);
+  background: linear-gradient(to top, var(--secondary-color), var(--gradient-color-2));
   height: 400px;
   color: var(--text-color);
   border-radius: 20px;
@@ -731,4 +733,54 @@ body.light-mode .sidebar {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+#map {
+  padding-bottom: 50px;
+  background-color: var(--dark-color);
+}
+.split-line-map {
+  background-color: var(--primary-color);
+  height: 4px;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  margin-top: 90px;
+  position: absolute;
+}
+.map-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.map-container {
+  width: 95%;
+  background: linear-gradient(to top, var(--secondary-color), var(--gradient-color-2));
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.map-iframe {
+  height: 500px;
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.visit-guide {
+  color: var(--text-color);
+}
+.tips-title {
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+}
+.tips-desc {
+  color: var(--desc-color);
+  font-weight: 400;
+}
+.tip-title {
+  font-weight: 500;
 }
