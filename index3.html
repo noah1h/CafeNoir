@@ -29,7 +29,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
- 
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <!-- Swiper.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -337,9 +339,9 @@
 
     <section id="map">
       <div class="map-container">
-      <div class="section-title map-title text-center">
+      <div class="section-title map-title-container text-center">
         <div class="split-line-map" data-aos="fade-left"></div>
-        <span data-aos="fade-right">Visit us</span></div>
+        <span data-aos="fade-right" class="map-title">Visit us</span></div>
         <div class="container-fluid px-0">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -382,11 +384,42 @@
         
       </div>
     </section>
+    <section id="experience">
+      <div class="section-title map-title-container text-center">
+        <div class="split-line-map" data-aos="fade-left"></div>
+        <span data-aos="fade-right" class="map-title experience-title">More than coffee</span></div>
+        <div class="container-fluid p-0 m-0">
+        <div class="row g-3">
+          <div class="col-lg-5 col-sm-12">
+            <div class="experience-card px-3" data-aos="fade-right">
+              <div class="experience-card-title">A Space to Slow Down</div>
+              <div class="experience-card-desc pt-3 pb-3">Step away from the noise and into a world of warm lights, soft jazz, and rich aromas. <br><br>
+                At CaféNoir, every corner is designed for quiet mornings, deep conversations, and peaceful escapes.</div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-sm-12 p-0 m-0">
+            <img data-aos="fade-left" class="experience-img" src="img/more-than-cafe-2.jpg" alt="">
+          </div>
+          <div data-aos="fade-right" class="col-lg-7 col-sm-12"><img class="experience-img-2" src="img/more-than-cafe-6.jpg" alt=""></div>
+          <div class="col-lg-5 col-sm-12 p-0 m-0">
+            <div data-aos="fade-left" class="experience-card px-3 pt-5">
+              <div class="experience-card-title">Moments That Linger</div>
+              <div class="experience-card-desc pt-3">Whether you're meeting friends or enjoying a solo coffee ritual, CaféNoir offers more than a drink — it offers an experience. <br> <br>
+                Stay a little longer. Savor every sip. Feel the noir.</div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
    <!-- jQuery (single import) -->
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
  
    <!-- AOS -->
-  
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+     
+   </script>
  
    <!-- Custom JS -->
    <script src="js/script.js"></script>
