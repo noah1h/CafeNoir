@@ -33,7 +33,7 @@ body {
 }
 section, header, footer, main {
   background-color: var(--background-color);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 html a {
   text-decoration: none;
@@ -801,5 +801,5 @@ body.light-mode .sidebar {
 }
 #experience {
   background-color: var(--dark-color);
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
