@@ -35,6 +35,9 @@ section, header, footer, main {
   background-color: var(--background-color);
   overflow: hidden;
 }
+html {
+  overflow-x: hidden;
+}
 html a {
   text-decoration: none;
 }
@@ -830,17 +833,11 @@ body.light-mode .sidebar {
   border-bottom-right-radius: 50px;
   overflow: hidden;
 }
-body.light-mode .contact-info-section, body.light-mode .contact-info-title {
-  color: var(--background-color);
-}
 .info-svg {
   width: 35px;
   height: 35px;
   fill: var(--text-color);
   margin-right: 10px;
-}
-body.light-mode .info-svg {
-  fill: var(--background-color);
 }
 .info-text {
   font-size: 20px;
@@ -909,4 +906,3 @@ body.light-mode .info-svg {
   background: linear-gradient(to top, var(--secondary-color), var(--gradient-color-2));
   border-radius: 20px;
 }
-
